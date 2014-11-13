@@ -6,8 +6,13 @@ angular.module('App', ['ionic'])
     .state('home', {
       url: '/home',
       templateUrl: 'views/home/home.html'
+    })
+    .state('reservation', {
+      url: '/reservation',
+      controller: 'ReservationController',
+      templateUrl: 'views/reservation/reservation.html'
     });
-  
+
   $urlRouterProvider.otherwise('/home');
 
 })
