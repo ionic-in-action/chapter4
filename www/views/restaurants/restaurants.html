@@ -9,6 +9,6 @@
         <img ng-src="{{restaurant.image_url}}" />
       </div>
     </div>
-    <ion-infinite-scroll on-infinite="getRestaurants()" ng-if="total < page" immediate-check="false"></ion-infinite-scroll>
+    <ion-infinite-scroll on-infinite="getRestaurants()" ng-if="total > page" immediate-check="false"></ion-infinite-scroll>
   </ion-content>
 </ion-view>
